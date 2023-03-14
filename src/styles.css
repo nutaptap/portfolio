@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*#region NavBar*/
+
+.nav-container {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80vw;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav button {
+  padding: 0.3rem;
+  height: 30px;
+  font-size: 0.8rem;
+}
+
+nav li {
+  margin: 0.5rem;
+}
+/*#endregion*/
