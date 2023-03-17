@@ -1,4 +1,11 @@
-function NavBar() {
+import React from "react";
+import { LanguageType } from "../types/types";
+
+type NavBarProps = {
+  onLanguageChange: (newLanguage: LanguageType) => void;
+};
+
+function NavBar({ onLanguageChange }: NavBarProps) {
   return (
     <div className="nav-container">
       <nav>
