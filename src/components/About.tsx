@@ -1,32 +1,44 @@
+import { LanguageContext } from "../App";
+import { useContext } from "react";
+import languageData from "../languageData";
 import cvpic from "../assets/cvpic.png";
-import picEris from "../assets/pic-eris.png";
-import mug from "../assets/mug.svg";
 
 function About() {
+  const language = useContext(LanguageContext);
+
   return (
     <div className="about">
       <img className="picture" src={cvpic} alt="Nuria" />
       <div>
         <div className="section-title">
           <div className="line" />
-          <h4>About me</h4>
+          <h4>
+            {(language === "en" && languageData.en.about.title) ||
+              (language === "es" && languageData.es.about.title) ||
+              (language === "ca" && languageData.ca.about.title)}
+          </h4>
         </div>
         <p>
-          👋 Hi there, I'm a self-taught frontend developer.
+          👋{" "}
+          {(language === "en" && languageData.en.about.text1) ||
+            (language === "es" && languageData.es.about.text1) ||
+            (language === "ca" && languageData.ca.about.text1)}
           <br />
-          I got interested in development because I’ve always been into building
-          things and loved the idea of creating websites and applications.
+          {(language === "en" && languageData.en.about.text2) ||
+            (language === "es" && languageData.es.about.text2) ||
+            (language === "ca" && languageData.ca.about.text2)}
           <br />
-          I'm proficient in HTML, CSS, JavaScript and Typescript, and enjoy
-          working with frameworks like React.
+          {(language === "en" && languageData.en.about.text3) ||
+            (language === "es" && languageData.es.about.text3) ||
+            (language === "ca" && languageData.ca.about.text3)}
           <br />
-          I'm passionate about creating apps that can improve people's lives and
-          adding little details that make the experience more enjoyable for
-          everyone.
+          {(language === "en" && languageData.en.about.text4) ||
+            (language === "es" && languageData.es.about.text4) ||
+            (language === "ca" && languageData.ca.about.text4)}
           <br />
-          I'm always excited to learn new things and improve my skills. When I'm
-          not coding, you can find me making illustrations or hanging out with
-          my cat Eris.
+          {(language === "en" && languageData.en.about.text5) ||
+            (language === "es" && languageData.es.about.text5) ||
+            (language === "ca" && languageData.ca.about.text5)}
         </p>
         <button type="button">CV</button>
       </div>

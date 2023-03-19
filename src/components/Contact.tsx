@@ -1,14 +1,43 @@
+import { LanguageContext } from "../App";
+import { useContext } from "react";
+import languageData from "../languageData";
+
+/* contact: {
+  title: 'Contacte',
+  firstHeading: 'Tant si vols fer-me alguna pregunta o simplement saludar,',
+  secondHeading: "No dubtis en escriure'm!",
+  button: "ENVIA'M UN MISSATGE"
+} */
+
 function Contact() {
+  const language = useContext(LanguageContext);
+
   return (
     <div className="contact">
       <div className="section-title">
         <div className="line" />
-        <h4>Get in touch</h4>
+        <h4>
+          {(language === "en" && languageData.en.contact.title) ||
+            (language === "es" && languageData.es.contact.title) ||
+            (language === "ca" && languageData.ca.contact.title)}
+        </h4>
       </div>
       <div className="contact-container">
-        <h3>Wether you want to ask any questions or just want to say hi,</h3>
-        <h2>My inbox is always open!</h2>
-        <button type="button">SEND ME A MESSAGE</button>
+        <h3>
+          {(language === "en" && languageData.en.contact.firstHeading) ||
+            (language === "es" && languageData.es.contact.firstHeading) ||
+            (language === "ca" && languageData.ca.contact.firstHeading)}
+        </h3>
+        <h2>
+          {(language === "en" && languageData.en.contact.secondHeading) ||
+            (language === "es" && languageData.es.contact.secondHeading) ||
+            (language === "ca" && languageData.ca.contact.secondHeading)}
+        </h2>
+        <button type="button">
+          {(language === "en" && languageData.en.contact.button) ||
+            (language === "es" && languageData.es.contact.button) ||
+            (language === "ca" && languageData.ca.contact.button)}
+        </button>
       </div>
     </div>
   );

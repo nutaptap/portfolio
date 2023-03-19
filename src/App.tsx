@@ -8,13 +8,14 @@ import Footer from "./components/Footer";
 import { useState, createContext } from "react";
 import { LanguageType } from "./types/types";
 
-const LanguageContext = createContext<LanguageType>("en");
+export const LanguageContext = createContext<LanguageType>("en");
 
 function App() {
   const [language, setLanguage] = useState<LanguageType>("en");
 
   function handleLanguageChange(newLanguage: LanguageType) {
     setLanguage(newLanguage);
+    console.log(newLanguage);
   }
 
   return (

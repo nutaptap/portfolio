@@ -1,22 +1,41 @@
+import { LanguageContext } from "../App";
+import { useContext } from "react";
+import languageData from "../languageData";
 import repo from "../assets/repo.svg";
 
 function Work() {
-  const lorem =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+  const language = useContext(LanguageContext);
 
   return (
     <div className="work">
       <div className="section-title">
         <div className="line" />
-        <h4>Work</h4>
+        <h4>
+          {(language === "en" && languageData.en.projects.title) ||
+            (language === "es" && languageData.es.projects.title) ||
+            (language === "ca" && languageData.ca.projects.title)}
+        </h4>
       </div>
+      {/* Portfolio */}
       <div className="projects-container">
         <article className="project">
           <div>
             <a target="_blank">
-              <h3>Portfolio</h3>
+              <h3>
+                {(language === "en" &&
+                  languageData.en.projects.portfolio.title) ||
+                  (language === "es" &&
+                    languageData.es.projects.portfolio.title) ||
+                  (language === "ca" &&
+                    languageData.ca.projects.portfolio.title)}
+              </h3>
             </a>
-            <p>{lorem}</p>
+            <p>
+              {(language === "en" && languageData.en.projects.portfolio.text) ||
+                (language === "es" &&
+                  languageData.es.projects.portfolio.text) ||
+                (language === "ca" && languageData.ca.projects.portfolio.text)}
+            </p>
             <div className="tags">
               <h4>Typescript</h4>
               <h4>React</h4>
@@ -30,7 +49,7 @@ function Work() {
             </a>
           </div>
         </article>
-
+        {/* Habit tracker */}
         <article className="project">
           <div>
             <img src="https://picsum.photos/450/300?grayscale" />
@@ -41,22 +60,48 @@ function Work() {
           </div>
           <div>
             <a target="_blank">
-              <h3>Habit tracker</h3>
+              <h3>
+                {(language === "en" &&
+                  languageData.en.projects.habitTracker.title) ||
+                  (language === "es" &&
+                    languageData.es.projects.habitTracker.title) ||
+                  (language === "ca" &&
+                    languageData.ca.projects.habitTracker.title)}
+              </h3>
             </a>
-            <p>{lorem}</p>
+            <p>
+              {(language === "en" &&
+                languageData.en.projects.habitTracker.text) ||
+                (language === "es" &&
+                  languageData.es.projects.habitTracker.text) ||
+                (language === "ca" &&
+                  languageData.ca.projects.habitTracker.text)}
+            </p>
             <div className="tags">
               <h4>Typescript</h4>
               <h4>React</h4>
             </div>
           </div>
         </article>
-
+        {/* Pomoglobo */}
         <article className="project">
           <div>
             <a target="_blank">
-              <h3>Pomoglobo</h3>
+              <h3>
+                {(language === "en" &&
+                  languageData.en.projects.pomoglobo.title) ||
+                  (language === "es" &&
+                    languageData.es.projects.pomoglobo.title) ||
+                  (language === "ca" &&
+                    languageData.ca.projects.pomoglobo.title)}
+              </h3>
             </a>
-            <p>{lorem}</p>
+            <p>
+              {(language === "en" && languageData.en.projects.pomoglobo.text) ||
+                (language === "es" &&
+                  languageData.es.projects.pomoglobo.text) ||
+                (language === "ca" && languageData.ca.projects.pomoglobo.text)}
+            </p>
             <div className="tags">
               <h4>Typescript</h4>
               <h4>React</h4>
@@ -70,7 +115,7 @@ function Work() {
             </a>
           </div>
         </article>
-
+        {/* Cook that */}
         <article className="project">
           <div>
             <img src="https://picsum.photos/450/300?grayscale" />
@@ -81,9 +126,20 @@ function Work() {
           </div>
           <div>
             <a target="_blank">
-              <h3>Cook that!</h3>
+              <h3>
+                {(language === "en" &&
+                  languageData.en.projects.cookThat.title) ||
+                  (language === "es" &&
+                    languageData.es.projects.cookThat.title) ||
+                  (language === "ca" &&
+                    languageData.ca.projects.cookThat.title)}
+              </h3>
             </a>
-            <p>{lorem}</p>
+            <p>
+              {(language === "en" && languageData.en.projects.cookThat.text) ||
+                (language === "es" && languageData.es.projects.cookThat.text) ||
+                (language === "ca" && languageData.ca.projects.cookThat.text)}
+            </p>
             <div className="tags">
               <h4>Typescript</h4>
               <h4>React</h4>
