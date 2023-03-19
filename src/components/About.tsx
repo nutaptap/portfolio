@@ -7,7 +7,7 @@ function About() {
   const language = useContext(LanguageContext);
 
   return (
-    <div className="about">
+    <div className="about" id="about">
       <img className="picture" src={cvpic} alt="Nuria" />
       <div>
         <div className="section-title">

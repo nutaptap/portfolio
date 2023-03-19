@@ -13,7 +13,7 @@ function Contact() {
   const language = useContext(LanguageContext);
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="section-title">
         <div className="line" />
         <h4>

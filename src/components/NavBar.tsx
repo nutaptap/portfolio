@@ -1,46 +1,35 @@
-import React from "react";
 import { LanguageContext } from "../App";
 import { useContext } from "react";
-import { LanguageType } from "../types/types";
 import languageData from "../languageData";
+import { Link } from "react-router-dom";
 
-type NavBarProps = {
-  onLanguageChange: (newLanguage: LanguageType) => void;
-};
-
-/* navigation:{
-  home: 'Inicio',
-  work: 'Proyectos',
-  about: 'Sobre mi',
-  button: 'CONTACTO'
-}, */
-
-function NavBar({ onLanguageChange }: NavBarProps) {
+function NavBar() {
   const language = useContext(LanguageContext);
-
-  const handleLanguageChange = (event: React.MouseEvent<HTMLLIElement>) => {
-    const newLanguage = event.currentTarget.textContent as LanguageType;
-    onLanguageChange(newLanguage);
-  };
 
   return (
     <div className="nav-container">
       <nav>
         <ul className="nav-links">
           <li>
-            {(language === "en" && languageData.en.navigation.home) ||
-              (language === "es" && languageData.es.navigation.home) ||
-              (language === "ca" && languageData.ca.navigation.home)}
+            <a href="#app">
+              {(language === "en" && languageData.en.navigation.home) ||
+                (language === "es" && languageData.es.navigation.home) ||
+                (language === "ca" && languageData.ca.navigation.home)}
+            </a>
           </li>
           <li>
-            {(language === "en" && languageData.en.navigation.work) ||
-              (language === "es" && languageData.es.navigation.work) ||
-              (language === "ca" && languageData.ca.navigation.work)}
+            <a href="#work">
+              {(language === "en" && languageData.en.navigation.work) ||
+                (language === "es" && languageData.es.navigation.work) ||
+                (language === "ca" && languageData.ca.navigation.work)}
+            </a>
           </li>
           <li>
-            {(language === "en" && languageData.en.navigation.about) ||
-              (language === "es" && languageData.es.navigation.about) ||
-              (language === "ca" && languageData.ca.navigation.about)}
+            <a href="#about">
+              {(language === "en" && languageData.en.navigation.about) ||
+                (language === "es" && languageData.es.navigation.about) ||
+                (language === "ca" && languageData.ca.navigation.about)}
+            </a>
           </li>
           <li>
             <a target="_blank">CV</a>
@@ -48,14 +37,22 @@ function NavBar({ onLanguageChange }: NavBarProps) {
         </ul>
         <div>
           <ul className="nav-languages">
-            <li onClick={handleLanguageChange}>en</li>
-            <li onClick={handleLanguageChange}>es</li>
-            <li onClick={handleLanguageChange}>ca</li>
+            <li>
+              <Link to="/en">en</Link>
+            </li>
+            <li>
+              <Link to="/es">es</Link>
+            </li>
+            <li>
+              <Link to="/ca">ca</Link>
+            </li>
           </ul>
           <button type="button">
-            {(language === "en" && languageData.en.navigation.button) ||
-              (language === "es" && languageData.es.navigation.button) ||
-              (language === "ca" && languageData.ca.navigation.button)}
+            <a href="#contact">
+              {(language === "en" && languageData.en.navigation.button) ||
+                (language === "es" && languageData.es.navigation.button) ||
+                (language === "ca" && languageData.ca.navigation.button)}
+            </a>
           </button>
         </div>
       </nav>

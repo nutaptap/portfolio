@@ -13,7 +13,7 @@ function Footer() {
           <img src={linkedin}></img>
         </a>
       </div>
-      <a target="_blank" className="up">
+      <a href="#app" className="up">
         <img src={up}></img>
       </a>
     </div>

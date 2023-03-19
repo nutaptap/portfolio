@@ -7,7 +7,7 @@ function Work() {
   const language = useContext(LanguageContext);
 
   return (
-    <div className="work">
+    <div className="work" id="work">
       <div className="section-title">
         <div className="line" />
         <h4>
