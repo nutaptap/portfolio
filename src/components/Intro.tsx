@@ -9,11 +9,11 @@ function Intro() {
 
   return (
     <div className="intro">
-      <h4>
+      <h5>
         {(language === "en" && languageData.en.intro.greeting) ||
           (language === "es" && languageData.es.intro.greeting) ||
           (language === "ca" && languageData.ca.intro.greeting)}
-      </h4>
+      </h5>
       <h2>Nuria</h2>
       <h2>Fernández Granell</h2>
       <h3>

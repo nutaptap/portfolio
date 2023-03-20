@@ -2,6 +2,8 @@ import { LanguageContext } from "../App";
 import { useContext } from "react";
 import languageData from "../languageData";
 import repo from "../assets/repo.svg";
+import cookThat from "../assets/cook-that.png";
+import pomoglobo from "../assets/pomodoro.png";
 
 function Work() {
   const language = useContext(LanguageContext);
@@ -10,11 +12,11 @@ function Work() {
     <div className="work" id="work">
       <div className="section-title">
         <div className="line" />
-        <h4>
+        <h5>
           {(language === "en" && languageData.en.projects.title) ||
             (language === "es" && languageData.es.projects.title) ||
             (language === "ca" && languageData.ca.projects.title)}
-        </h4>
+        </h5>
       </div>
       {/* Portfolio */}
       <div className="projects-container">
@@ -37,25 +39,31 @@ function Work() {
                 (language === "ca" && languageData.ca.projects.portfolio.text)}
             </p>
             <div className="tags">
-              <h4>Typescript</h4>
-              <h4>React</h4>
+              <h5>Typescript</h5>
+              <h5>React</h5>
             </div>
           </div>
           <div>
-            <img src="https://picsum.photos/450/300?grayscale" />
+            <img
+              src="https://picsum.photos/450/300?"
+              className="project-image"
+            />
             <a target="_blank">
               <img src={repo}></img>
-              <h4>GitHub</h4>
+              <h5>GitHub</h5>
             </a>
           </div>
         </article>
         {/* Habit tracker */}
         <article className="project">
           <div>
-            <img src="https://picsum.photos/450/300?grayscale" />
+            <img
+              src="https://picsum.photos/450/300?"
+              className="project-image"
+            />
             <a target="_blank">
               <img src={repo}></img>
-              <h4>GitHub</h4>
+              <h5>GitHub</h5>
             </a>
           </div>
           <div>
@@ -78,15 +86,16 @@ function Work() {
                   languageData.ca.projects.habitTracker.text)}
             </p>
             <div className="tags">
-              <h4>Typescript</h4>
-              <h4>React</h4>
+              <h5>Typescript</h5>
+              <h5>React</h5>
+              <h5>Firebase</h5>
             </div>
           </div>
         </article>
         {/* Pomoglobo */}
         <article className="project">
           <div>
-            <a target="_blank">
+            <a target="_blank" href="https://nutaptap.github.io/pomoglobo/">
               <h3>
                 {(language === "en" &&
                   languageData.en.projects.pomoglobo.title) ||
@@ -103,29 +112,33 @@ function Work() {
                 (language === "ca" && languageData.ca.projects.pomoglobo.text)}
             </p>
             <div className="tags">
-              <h4>Typescript</h4>
-              <h4>React</h4>
+              <h5>Javascript</h5>
+              <h5>Freesound API</h5>
             </div>
           </div>
           <div>
-            <img src="https://picsum.photos/450/300?grayscale" />
-            <a target="_blank">
+            <a target="_blank" href="https://nutaptap.github.io/pomoglobo/">
+              <img src={pomoglobo} className="project-image" />
+            </a>
+            <a target="_blank" href="https://github.com/nutaptap/pomoglobo">
               <img src={repo}></img>
-              <h4>GitHub</h4>
+              <h5>GitHub</h5>
             </a>
           </div>
         </article>
         {/* Cook that */}
         <article className="project">
           <div>
-            <img src="https://picsum.photos/450/300?grayscale" />
-            <a target="_blank">
+            <a target="_blank" href="https://nutaptap.github.io/cook-that/">
+              <img src={cookThat} className="project-image" />
+            </a>
+            <a target="_blank" href="https://github.com/nutaptap/cook-that">
               <img src={repo}></img>
-              <h4>GitHub</h4>
+              <h5>GitHub</h5>
             </a>
           </div>
           <div>
-            <a target="_blank">
+            <a target="_blank" href="https://nutaptap.github.io/cook-that/">
               <h3>
                 {(language === "en" &&
                   languageData.en.projects.cookThat.title) ||
@@ -141,8 +154,8 @@ function Work() {
                 (language === "ca" && languageData.ca.projects.cookThat.text)}
             </p>
             <div className="tags">
-              <h4>Typescript</h4>
-              <h4>React</h4>
+              <h5>Javascript</h5>
+              <h5>Spoonacular API</h5>
             </div>
           </div>
         </article>

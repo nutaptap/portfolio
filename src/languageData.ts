@@ -42,11 +42,11 @@ const languageData = {
             },
             pomoglobo:{
                 title: 'Pomoglobo',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                text: "Pomoglobo is the productivity app that will help you minimize distractions, unlock your creativity and let you and finish your tasks on time. It includes: A to-do where you can add tasks and divide them into sub tasks. A couple of different background sounds that will help you block environmental noise. A pomodoro timer that will keep you on track."
             },
             cookThat:{
                 title: 'Cook that!',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered."
             }
         }
     },
@@ -58,7 +58,7 @@ const languageData = {
             button: 'CONTACTO'
         },
         intro: {
-            greeting: 'Hola, me llamo',
+            greeting: 'Hola, soy',
             subtitle: "Soy una desarrolladora frontend",
         },
         skills: {
@@ -92,11 +92,11 @@ const languageData = {
             },
             pomoglobo:{
                 title: 'Pomoglobo',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                text: "Pomoglobo is the productivity app that will help you minimize distractions, unlock your creativity and let you and finish your tasks on time. It includes: A to-do where you can add tasks and divide them into sub tasks. A couple of different background sounds that will help you block environmental noise. A pomodoro timer that will keep you on track."
             },
             cookThat:{
                 title: 'Cook that!',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered."
             }
         }
         
@@ -143,11 +143,11 @@ const languageData = {
             },
             pomoglobo:{
                 title: 'Pomoglobo',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                text: "Pomoglobo is the productivity app that will help you minimize distractions, unlock your creativity and let you and finish your tasks on time. It includes: A to-do where you can add tasks and divide them into sub tasks. A couple of different background sounds that will help you block environmental noise. A pomodoro timer that will keep you on track."
             },
             cookThat:{
                 title: 'Cook that!',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered."
             }
         }
     }

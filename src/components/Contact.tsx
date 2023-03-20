@@ -16,27 +16,29 @@ function Contact() {
     <div className="contact" id="contact">
       <div className="section-title">
         <div className="line" />
-        <h4>
+        <h5>
           {(language === "en" && languageData.en.contact.title) ||
             (language === "es" && languageData.es.contact.title) ||
             (language === "ca" && languageData.ca.contact.title)}
-        </h4>
+        </h5>
       </div>
       <div className="contact-container">
-        <h3>
+        <h4>
           {(language === "en" && languageData.en.contact.firstHeading) ||
             (language === "es" && languageData.es.contact.firstHeading) ||
             (language === "ca" && languageData.ca.contact.firstHeading)}
-        </h3>
-        <h2>
+        </h4>
+        <h3>
           {(language === "en" && languageData.en.contact.secondHeading) ||
             (language === "es" && languageData.es.contact.secondHeading) ||
             (language === "ca" && languageData.ca.contact.secondHeading)}
-        </h2>
+        </h3>
         <button type="button">
-          {(language === "en" && languageData.en.contact.button) ||
-            (language === "es" && languageData.es.contact.button) ||
-            (language === "ca" && languageData.ca.contact.button)}
+          <a target="_blank" href="">
+            {(language === "en" && languageData.en.contact.button) ||
+              (language === "es" && languageData.es.contact.button) ||
+              (language === "ca" && languageData.ca.contact.button)}
+          </a>
         </button>
       </div>
     </div>
