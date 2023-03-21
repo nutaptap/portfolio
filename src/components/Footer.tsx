@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-links">
-        <a target="_blank">
+        <a target="_blank" href="https://github.com/nutaptap">
           <img src={github}></img>
         </a>
         <a target="_blank">

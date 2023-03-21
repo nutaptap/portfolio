@@ -48,9 +48,9 @@ function Work() {
               src="https://picsum.photos/450/300?"
               className="project-image"
             />
-            <a target="_blank">
+            <a target="_blank" className="project-links">
               <img src={repo}></img>
-              <h5>GitHub</h5>
+              GitHub
             </a>
           </div>
         </article>
@@ -61,9 +61,9 @@ function Work() {
               src="https://picsum.photos/450/300?"
               className="project-image"
             />
-            <a target="_blank">
+            <a target="_blank" className="project-links">
               <img src={repo}></img>
-              <h5>GitHub</h5>
+              GitHub
             </a>
           </div>
           <div>
@@ -120,9 +120,13 @@ function Work() {
             <a target="_blank" href="https://nutaptap.github.io/pomoglobo/">
               <img src={pomoglobo} className="project-image" />
             </a>
-            <a target="_blank" href="https://github.com/nutaptap/pomoglobo">
+            <a
+              target="_blank"
+              href="https://github.com/nutaptap/pomoglobo"
+              className="project-links"
+            >
               <img src={repo}></img>
-              <h5>GitHub</h5>
+              GitHub
             </a>
           </div>
         </article>
@@ -132,9 +136,13 @@ function Work() {
             <a target="_blank" href="https://nutaptap.github.io/cook-that/">
               <img src={cookThat} className="project-image" />
             </a>
-            <a target="_blank" href="https://github.com/nutaptap/cook-that">
+            <a
+              target="_blank"
+              href="https://github.com/nutaptap/cook-that"
+              className="project-links"
+            >
               <img src={repo}></img>
-              <h5>GitHub</h5>
+              GitHub
             </a>
           </div>
           <div>

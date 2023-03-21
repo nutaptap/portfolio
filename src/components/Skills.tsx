@@ -23,6 +23,7 @@ function Skills() {
           <li>CSS</li>
           <li>React</li>
           <li>Git</li>
+          <li>Firebase</li>
           <li>
             {(language === "en" && languageData.en.skills.responsive) ||
               (language === "es" && languageData.es.skills.responsive) ||

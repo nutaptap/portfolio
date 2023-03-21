@@ -38,13 +38,28 @@ function NavBar() {
         <div>
           <ul className="nav-languages">
             <li>
-              <Link to="/en">en</Link>
+              <Link
+                to="/en"
+                className={language === "en" ? "active" : undefined}
+              >
+                en
+              </Link>
             </li>
             <li>
-              <Link to="/es">es</Link>
+              <Link
+                to="/es"
+                className={language === "es" ? "active" : undefined}
+              >
+                es
+              </Link>
             </li>
             <li>
-              <Link to="/ca">ca</Link>
+              <Link
+                to="/ca"
+                className={language === "ca" ? "active" : undefined}
+              >
+                ca
+              </Link>
             </li>
           </ul>
           <button type="button">

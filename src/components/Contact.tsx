@@ -34,7 +34,7 @@ function Contact() {
             (language === "ca" && languageData.ca.contact.secondHeading)}
         </h3>
         <button type="button">
-          <a target="_blank" href="">
+          <a href="mailto:nutaptap@gmail.com">
             {(language === "en" && languageData.en.contact.button) ||
               (language === "es" && languageData.es.contact.button) ||
               (language === "ca" && languageData.ca.contact.button)}
