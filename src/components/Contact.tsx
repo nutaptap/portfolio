@@ -2,13 +2,6 @@ import { LanguageContext } from "../App";
 import { useContext } from "react";
 import languageData from "../languageData";
 
-/* contact: {
-  title: 'Contacte',
-  firstHeading: 'Tant si vols fer-me alguna pregunta o simplement saludar,',
-  secondHeading: "No dubtis en escriure'm!",
-  button: "ENVIA'M UN MISSATGE"
-} */
-
 function Contact() {
   const language = useContext(LanguageContext);
 

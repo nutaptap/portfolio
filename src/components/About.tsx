@@ -9,7 +9,7 @@ function About() {
     <div className="about-container">
       <div className="about" id="about">
         <div className="picture" />
-        <div>
+        <div className="about-text">
           <div className="section-title">
             <div className="line" />
             <h5>
