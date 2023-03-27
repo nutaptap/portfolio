@@ -29,8 +29,7 @@ function Skills() {
 
   return (
     <div
-      className={isVisible ? "visible" : ""}
-      id="skills-container"
+      className={isVisible ? "visible skills-container" : "skills-container"}
       ref={containerRef}
     >
       <div className="skills">

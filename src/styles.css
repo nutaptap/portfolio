@@ -1,18 +1,4 @@
-.colors {
-  color: #1d1f2b;
-  color: #242734;
-  color: #2c2f3c;
-  color: #424657;
-  color: #70727f;
-  color: #ecebee;
-  color: #fdfdfd;
-  color: #b4f0e7;
-  color: #09c0c9;
-  color: #1ee3a1;
-  color: #019c88;
-  color: #e8ca70;
-  color: #c75764;
-}
+/*#region General*/
 
 html {
   scroll-behavior: smooth;
@@ -103,12 +89,11 @@ button {
   line-height: 25px;
   background-color: #019c88;
   border: #019c88;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-  transform: scale(1.02);
-  background-color: #3db98f;
+  background-color: #41bd94;
 }
 
 button a {
@@ -116,14 +101,11 @@ button a {
   transition: all 0.4s ease-in-out;
 }
 
-button a:hover {
-  color: white;
-  transform: scale(0.98);
-}
-
 .active {
   color: #ecebee;
 }
+
+/*#endregion*/
 
 /*#region Animations*/
 
@@ -162,6 +144,17 @@ button a:hover {
   from {
     opacity: 0;
     transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
   }
   to {
     opacity: 1;
@@ -350,7 +343,7 @@ nav button a:hover::before {
 
 /*#region Skills*/
 
-#skills-container {
+.skills-container {
   margin-top: 11rem;
   background-color: #2c2f3c;
   width: 100%;
@@ -381,43 +374,43 @@ nav button a:hover::before {
 
 /*Skills Animations*/
 
-#skills-container.visible {
+.skills-container.visible {
   animation: fade-in 1.5s forwards;
 }
 
-#skills-container.visible li:nth-of-type(1) {
+.skills-container.visible li:nth-of-type(1) {
   animation: fade-in-right 0.8s forwards;
 }
 
-#skills-container.visible li:nth-of-type(2) {
+.skills-container.visible li:nth-of-type(2) {
   animation: fade-in-right 0.8s 0.1s forwards;
 }
 
-#skills-container.visible li:nth-of-type(3) {
+.skills-container.visible li:nth-of-type(3) {
   animation: fade-in-right 0.8s 0.2s forwards;
 }
 
-#skills-container.visible li:nth-of-type(4) {
+.skills-container.visible li:nth-of-type(4) {
   animation: fade-in-right 0.8s 0.3s forwards;
 }
 
-#skills-container.visible li:nth-of-type(5) {
+.skills-container.visible li:nth-of-type(5) {
   animation: fade-in-right 0.8s 0.4s forwards;
 }
 
-#skills-container.visible li:nth-of-type(6) {
+.skills-container.visible li:nth-of-type(6) {
   animation: fade-in-right 0.8s 0.5s forwards;
 }
 
-#skills-container.visible li:nth-of-type(7) {
+.skills-container.visible li:nth-of-type(7) {
   animation: fade-in-right 0.8s 0.6s forwards;
 }
 
-#skills-container.visible li:nth-of-type(8) {
+.skills-container.visible li:nth-of-type(8) {
   animation: fade-in-right 0.8s 0.7s forwards;
 }
 
-#skills-container.visible li:nth-of-type(9) {
+.skills-container.visible li:nth-of-type(9) {
   animation: fade-in-right 0.8s 0.8s forwards;
 }
 
@@ -433,6 +426,7 @@ nav button a:hover::before {
 
 .work h3 {
   color: #ecebee;
+  margin-top: 0.5rem;
   transition: color 0.3s ease-in-out;
 }
 
@@ -451,10 +445,11 @@ nav button a:hover::before {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+  opacity: 0;
 }
 
 .project-image {
-  width: 450px;
+  width: 500px;
   filter: brightness(0.6) saturate(0.8);
   transition: filter 0.3s ease-in-out;
 }
@@ -488,6 +483,7 @@ nav button a:hover::before {
   align-items: center;
   gap: 0.5rem;
   margin-top: 1rem;
+  margin-left: 1rem;
   filter: invert(70%);
   transition: all 0.2s ease-in-out;
 }
@@ -502,6 +498,34 @@ nav button a:hover::before {
   color: rgb(70, 70, 70);
 }
 
+.project div:first-of-type {
+  opacity: 0;
+}
+
+.project div:last-of-type {
+  opacity: 0;
+}
+
+.project:nth-of-type(1),
+.project:nth-of-type(3),
+.project:nth-of-type(5) {
+  flex-direction: row-reverse;
+}
+
+/*Work Animations*/
+
+.project.visible {
+  animation: fade-in 1.5s forwards;
+}
+
+.project.visible div:first-of-type {
+  animation: fade-in-up 0.8s forwards;
+}
+
+.project.visible div:last-of-type {
+  animation: fade-in-up 1s 0.2s forwards;
+}
+
 /*#endregion*/
 
 /*#region About*/
@@ -513,6 +537,7 @@ nav button a:hover::before {
   padding: 6rem 0;
   background-color: #2c2f3c;
   width: 99vw;
+  opacity: 0;
 }
 
 .about {
@@ -526,7 +551,7 @@ nav button a:hover::before {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 700px;
+  width: 50vw;
   margin-left: 2rem;
 }
 
@@ -543,6 +568,7 @@ nav button a:hover::before {
   height: 400px;
   background-size: cover;
   background-position: center;
+  opacity: 0;
   transition: all 0.6s ease-in-out;
 }
 
@@ -552,10 +578,31 @@ nav button a:hover::before {
 
 .about button {
   margin-bottom: 1rem;
+  opacity: 0;
 }
 
-.about-text {
-  position: relative;
+.about-text,
+.about .picture,
+.about button {
+  opacity: 0;
+}
+
+/*About Animations*/
+
+.about-container.visible {
+  animation: fade-in 2s forwards;
+}
+
+.about-container.visible .picture {
+  animation: fade-in 3.5s forwards;
+}
+
+.about-container.visible .about-text {
+  animation: fade-in-up 1.2s forwards;
+}
+
+.about-container.visible button {
+  animation: fade-in-up 2s 0.8s forwards;
 }
 
 /*#endregion*/
@@ -568,6 +615,7 @@ nav button a:hover::before {
   flex-direction: column;
   padding: 0 15vw;
   max-width: 900px;
+  opacity: 0;
 }
 
 .contact-container {
@@ -580,6 +628,30 @@ nav button a:hover::before {
 
 .contact button {
   margin-top: 4rem;
+}
+
+.contact button,
+.contact h3,
+.contact h4 {
+  opacity: 0;
+}
+
+/*Contact Animations*/
+
+.contact.visible {
+  animation: fade-in 2s forwards;
+}
+
+.contact.visible h4 {
+  animation: fade-in-up 1s forwards;
+}
+
+.contact.visible h3 {
+  animation: fade-in-up 1s 0.2s forwards;
+}
+
+.contact.visible button {
+  animation: fade-in-up 1.5s 0.2s forwards;
 }
 
 /*#endregion*/
@@ -622,6 +694,22 @@ nav button a:hover::before {
 .up img {
   width: 18px;
   height: 18px;
+}
+
+/*#endregion*/
+
+/*#region Media Queries*/
+
+/*Small screen*/
+
+@media (max-width: 1200px) {
+  .project-image {
+    width: 450px;
+  }
+
+  .about {
+    max-width: 900px;
+  }
 }
 
 /*#endregion*/

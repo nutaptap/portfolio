@@ -30,25 +30,34 @@ const languageData = {
             text4: "I'm passionate about creating apps that can improve people's lives and adding little details that make the experience more enjoyable for everyone.",
             text5: "I'm always excited to learn new things and improve my skills. When I'm not coding, you can find me making illustrations or hanging out with my cat Eris."
         },
-        projects: {
-            title: 'Work',
-            portfolio:{
-                title: 'Portfolio',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            },
-            habitTracker:{
-                title: 'Habit tracker',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            },
-            pomoglobo:{
-                title: 'Pomoglobo',
-                text: "Pomoglobo is the productivity app that will help you minimize distractions, unlock your creativity and let you and finish your tasks on time. It includes: A to-do where you can add tasks and divide them into sub tasks. A couple of different background sounds that will help you block environmental noise. A pomodoro timer that will keep you on track."
-            },
-            cookThat:{
-                title: 'Cook that!',
-                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered."
-            }
-        }
+        projectsTitle: 'Work', 
+            projects: [
+                {
+                    title: 'Portfolio',
+                    text: "My portfolio website is a showcase of my projects and skills. Built with Typescript and React, it features dynamic animations on scroll and allows users to switch between languages. This was my first project using Typescript, and I'm really happy of how it turned out.",
+                    image: "./portfolio.png",
+                    tags: ["Typescript", "React"],
+                    link: ""
+                },{
+                    title: 'Habit tracker',
+                    text: "The Habit Tracker app helps you replace unhealthy habits with positive ones. It is connected to Firebase for secure authentication and data storage, so it allows you to track your progress and set daily goals. Whether you want to drink more water, exercise regularly, or read more, the Habit Tracker app can help you build healthy habits and stay motivated.",
+                    image: "./cook-that.png",
+                    tags: ["Typescript", "React", "Firebase"],
+                    link: ""
+                },{
+                    title: 'Pomoglobo',
+                    text: "Pomoglobo is the productivity app that will help you minimize distractions and unlock your creativity. With a to-do section for managing your tasks, different background sounds to block out environmental noise, and a pomodoro timer to keep you on track, Pomoglobo is the perfect productivity companion. Whether you're studying or working, pomoglobo can help you stay focused and achieve your goals.",
+                    image: "./pomoglobo.png",
+                    tags: ["Javascript", "Freesound API"],
+                    link: "https://nutaptap.github.io/pomoglobo/"
+                },{
+                    title: 'Cook that!',
+                    text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered.",
+                    image: "./cook-that.png",
+                    tags: ["Javascript", "Spoonacular API"],
+                    link: "https://nutaptap.github.io/cook-that/"
+                }
+            ]
     },
     es: {
         navigation:{
@@ -80,25 +89,34 @@ const languageData = {
             text4: "Me apasiona crear aplicaciones que puedan mejorar la vida de las personas y agregar pequeños detalles que hagan la experiencia más agradable para todos.",
             text5: "Siempre estoy motivada para aprender cosas nuevas y mejorar mis habilidades. Cuando no estoy programando, me puedes encontrar haciendo ilustraciones o pasando tiempo con mi gata Eris."
         },
-        projects: {
-            title: 'Proyectos',
-            portfolio:{
-                title: 'Portafolio',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            },
-            habitTracker:{
+        projectsTitle: 'Proyectos',
+        projects: [
+            {
+                title: 'Portfolio',
+                text: "My portfolio website is a showcase of my projects and skills. Built with Typescript and React, it features dynamic animations on scroll and allows users to switch between languages. This was my first project using Typescript, and I'm really happy of how it turned out.",
+                image: "./portfolio.png",
+                tags: ["Typescript", "React"],
+                link: ""
+            },{
                 title: 'Habit tracker',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            },
-            pomoglobo:{
+                text: "The Habit Tracker app helps you replace unhealthy habits with positive ones. It is connected to Firebase for secure authentication and data storage, so it allows you to track your progress and set daily goals. Whether you want to drink more water, exercise regularly, or read more, the Habit Tracker app can help you build healthy habits and stay motivated.",
+                image: "./cook-that.png",
+                tags: ["Typescript", "React", "Firebase"],
+                link: ""
+            },{
                 title: 'Pomoglobo',
-                text: "Pomoglobo is the productivity app that will help you minimize distractions, unlock your creativity and let you and finish your tasks on time. It includes: A to-do where you can add tasks and divide them into sub tasks. A couple of different background sounds that will help you block environmental noise. A pomodoro timer that will keep you on track."
-            },
-            cookThat:{
+                text: "Pomoglobo is the productivity app that will help you minimize distractions and unlock your creativity. With a to-do section for managing your tasks, different background sounds to block out environmental noise, and a pomodoro timer to keep you on track, Pomoglobo is the perfect productivity companion. Whether you're studying or working, pomoglobo can help you stay focused and achieve your goals.",
+                image: "./pomoglobo.png",
+                tags: ["Javascript", "Freesound API"],
+                link: "https://nutaptap.github.io/pomoglobo/"
+            },{
                 title: 'Cook that!',
-                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered."
+                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered.",
+                image: "./cook-that.png",
+                tags: ["Javascript", "Spoonacular API"],
+                link: "https://nutaptap.github.io/cook-that/"
             }
-        }
+        ]
         
     },
     ca: {
@@ -131,25 +149,35 @@ const languageData = {
             text4: "M'apassiona crear aplicacions que puguin millorar la vida de les persones i afegir petits detalls que facin l'experiència més agradable per a tothom.",
             text5: "Sempre estic motivada per aprendre coses noves i millorar les meves habilitats. Quan no estic programant, em pots trobar fent il·lustracions o passant temps amb la meva gata Eris."
         },
-        projects: {
-            title: 'Projectes',
-            portfolio:{
-                title: 'Portafoli',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            },
-            habitTracker:{
+        projectsTitle: 'Projectes',
+        projects: [
+            {
+                title: 'Portfolio',
+                text: "My portfolio website is a showcase of my projects and skills. Built with Typescript and React, it features dynamic animations on scroll and allows users to switch between languages. This was my first project using Typescript, and I'm really happy of how it turned out.",
+                image: "./portfolio.png",
+                tags: ["Typescript", "React"],
+                link: ""
+            },{
                 title: 'Habit tracker',
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            },
-            pomoglobo:{
+                text: "The Habit Tracker app helps you replace unhealthy habits with positive ones. It is connected to Firebase for secure authentication and data storage, so it allows you to track your progress and set daily goals. Whether you want to drink more water, exercise regularly, or read more, the Habit Tracker app can help you build healthy habits and stay motivated.",
+                image: "./cook-that.png",
+                tags: ["Typescript", "React", "Firebase"],
+                link: ""
+            },{
                 title: 'Pomoglobo',
-                text: "Pomoglobo is the productivity app that will help you minimize distractions, unlock your creativity and let you and finish your tasks on time. It includes: A to-do where you can add tasks and divide them into sub tasks. A couple of different background sounds that will help you block environmental noise. A pomodoro timer that will keep you on track."
-            },
-            cookThat:{
+                text: "Pomoglobo is the productivity app that will help you minimize distractions and unlock your creativity. With a to-do section for managing your tasks, different background sounds to block out environmental noise, and a pomodoro timer to keep you on track, Pomoglobo is the perfect productivity companion. Whether you're studying or working, pomoglobo can help you stay focused and achieve your goals.",
+                image: "./pomoglobo.png",
+                tags: ["Javascript", "Freesound API"],
+                link: "https://nutaptap.github.io/pomoglobo/"
+            },{
                 title: 'Cook that!',
-                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered."
+                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered.",
+                image: "./cook-that.png",
+                tags: ["Javascript", "Spoonacular API"],
+                link: "https://nutaptap.github.io/cook-that/"
             }
-        }
+        ]
+        
     }
 }
 
