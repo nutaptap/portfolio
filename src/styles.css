@@ -362,7 +362,7 @@ nav button a:hover::before {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 1.5rem 2rem;
 }
 
 .skills li {
@@ -547,7 +547,7 @@ nav button a:hover::before {
   max-width: 1000px;
 }
 
-.about > div:last-of-type {
+.about-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -703,12 +703,128 @@ nav button a:hover::before {
 /*Small screen*/
 
 @media (max-width: 1200px) {
+  .skills {
+    padding: 2rem 10vw 4rem;
+  }
+
+  .work {
+    padding: 0 10vw;
+  }
+
   .project-image {
-    width: 450px;
+    width: 400px;
   }
 
   .about {
     max-width: 900px;
+  }
+}
+
+/*Laptop*/
+
+@media (max-width: 1000px) {
+  .project-image {
+    width: 350px;
+  }
+
+  .project p {
+    max-width: 50vw;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about .picture {
+    max-width: 35vw;
+  }
+
+  .about-text {
+    width: 60vw;
+  }
+}
+
+/*Tablet*/
+
+@media (max-width: 850px) {
+  .intro {
+    align-self: center;
+    padding-left: 0;
+  }
+
+  .skills li {
+    font-size: 0.9rem;
+  }
+
+  .project,
+  .project:nth-of-type(1),
+  .project:nth-of-type(3),
+  .project:nth-of-type(5) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .project-image {
+    width: 70vw;
+  }
+
+  .work h3 {
+    margin-top: 1.2rem;
+  }
+
+  .project p {
+    max-width: 70vw;
+  }
+
+  .about-text {
+    width: 75vw;
+    margin: 0;
+  }
+}
+
+/*Mobile*/
+
+@media (max-width: 600px) {
+  nav div {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  nav button {
+    margin-left: auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .skills {
+    padding: 2rem 5vw 4rem;
+  }
+
+  .skills ul {
+    gap: 1rem 1.5rem;
+  }
+
+  .projects-container {
+    gap: 4rem;
+  }
+
+  .about .picture {
+    max-width: 100vw;
+  }
+
+  .about-text {
+    width: 80vw;
   }
 }
 
