@@ -562,7 +562,6 @@ nav button a:hover::before {
 }
 
 .about .picture {
-  position: relative;
   background-image: url("./assets/cvpic.png");
   width: 400px;
   height: 400px;
@@ -820,7 +819,7 @@ nav button a:hover::before {
   }
 
   .about .picture {
-    max-width: 100vw;
+    display: none;
   }
 
   .about-text {
