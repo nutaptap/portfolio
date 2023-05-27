@@ -573,6 +573,11 @@ nav button a:hover::before {
   transition: all 0.6s ease-in-out;
 }
 
+.about .picture::after {
+  background-image: url("./assets/pic-eris.png");
+  display: none;
+}
+
 .about .picture:hover {
   background-image: url("./assets/pic-eris.png");
 }
