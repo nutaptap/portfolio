@@ -3,6 +3,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import languageData from "../languageData";
 import nuria from "../assets/cvpic.png";
 import eris from "../assets/pic-eris.png";
+import cv from "../assets/Nuria.pdf";
 
 function About() {
   const language = useContext(LanguageContext);
@@ -73,7 +74,7 @@ function About() {
               (language === "ca" && languageData.ca.about.text5)}
           </p>
           <button type="button">
-            <a target="_blank" href="">
+            <a target="_blank" href={cv} rel="noopener noreferrer">
               CV
             </a>
           </button>

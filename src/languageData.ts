@@ -52,7 +52,7 @@ const languageData = {
                     link: "https://nutaptap.github.io/pomoglobo/"
                 },{
                     title: 'Cook that!',
-                    text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered.",
+                    text: "I developed a web application that suggests delicious recipes based on the user's dietary preferences. I used JavaScript and the Spoonacular API to retrieve highly-rated and quick-to-make recipes, select one of them randomly, and render it.",
                     image: "./cook-that.png",
                     tags: ["Javascript", "Spoonacular API"],
                     link: "https://nutaptap.github.io/cook-that/"
@@ -171,7 +171,7 @@ const languageData = {
                 link: "https://nutaptap.github.io/pomoglobo/"
             },{
                 title: 'Cook that!',
-                text: "Need some inspiration in the kitchen? CookThat is here to help! This app suggests delicious recipes based on your preferences and filters out any dishes that will take too long to prepare. So whether you're short on time or just want a hassle-free meal, CookThat has you covered.",
+                text: "I developed a web application that suggests delicious recipes based on the user's dietary preferences. I used JavaScript and the Spoonacular API to retrieve highly-rated and quick-to-make recipes, select one of them randomly, and render it.",
                 image: "./cook-that.png",
                 tags: ["Javascript", "Spoonacular API"],
                 link: "https://nutaptap.github.io/cook-that/"

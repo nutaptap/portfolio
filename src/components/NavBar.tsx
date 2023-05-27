@@ -2,6 +2,7 @@ import { LanguageContext } from "../App";
 import { useContext } from "react";
 import languageData from "../languageData";
 import { Link } from "react-router-dom";
+import cv from "../assets/Nuria.pdf";
 
 function NavBar() {
   const language = useContext(LanguageContext);
@@ -32,7 +33,9 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a target="_blank">CV</a>
+            <a target="_blank" href={cv} rel="noopener noreferrer">
+              CV
+            </a>
           </li>
         </ul>
         <div>

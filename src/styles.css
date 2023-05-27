@@ -354,7 +354,7 @@ nav button a:hover::before {
 }
 
 .skills {
-  padding: 2rem 15vw 4rem;
+  padding: 4rem 15vw 5rem;
   max-width: 900px;
 }
 
@@ -364,13 +364,28 @@ nav button a:hover::before {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem 2rem;
+  font-size: 1.3rem;
 }
 
 .skills li {
   white-space: nowrap;
   background-color: #242734;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skills img {
+  width: 20px;
+  height: 20px;
+}
+
+.skills .git-icon {
+  filter: invert(100%);
+  width: 23px;
+  height: 23px;
 }
 
 /*Skills Animations*/
@@ -516,7 +531,7 @@ nav button a:hover::before {
 /*Work Animations*/
 
 .project.visible {
-  animation: fade-in 1.5s forwards;
+  animation: fade-in 3s forwards;
 }
 
 .project.visible div:first-of-type {
@@ -610,11 +625,11 @@ nav button a:hover::before {
 }
 
 .about-container.visible .picture {
-  animation: fade-in 3.5s forwards;
+  animation: fade-in 3s forwards;
 }
 
 .about-container.visible .about-text {
-  animation: fade-in-up 1.2s forwards;
+  animation: fade-in 3.8s forwards;
 }
 
 .about-container.visible button {

@@ -1,6 +1,13 @@
 import { LanguageContext } from "../App";
 import { useContext, useEffect, useRef, useState } from "react";
 import languageData from "../languageData";
+import js from "../assets/js.png";
+import ts from "../assets/typescript.png";
+import html from "../assets/html-5.png";
+import css from "../assets/css-3.png";
+import reactIcon from "../assets/react.png";
+import git from "../assets/git.png";
+import firebase from "../assets/firebase.png";
 
 function Skills() {
   const language = useContext(LanguageContext);
@@ -42,13 +49,27 @@ function Skills() {
           </h5>
         </div>
         <ul>
-          <li>JavaScript</li>
-          <li>Typescript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
-          <li>Git</li>
-          <li>Firebase</li>
+          <li>
+            <img src={js} /> JavaScript
+          </li>
+          <li>
+            <img src={ts} /> Typescript
+          </li>
+          <li>
+            <img src={html} /> HTML
+          </li>
+          <li>
+            <img src={css} /> CSS
+          </li>
+          <li>
+            <img src={reactIcon} /> React
+          </li>
+          <li>
+            <img className="git-icon" src={git} /> Git
+          </li>
+          <li>
+            <img src={firebase} /> Firebase
+          </li>
           <li>
             {(language === "en" && languageData.en.skills.responsive) ||
               (language === "es" && languageData.es.skills.responsive) ||
