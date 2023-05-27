@@ -1,6 +1,8 @@
 import { LanguageContext } from "../App";
 import { useContext, useEffect, useRef, useState } from "react";
 import languageData from "../languageData";
+import nuria from "../assets/cvpic.png";
+import eris from "../assets/pic-eris.png";
 
 function About() {
   const language = useContext(LanguageContext);
@@ -33,7 +35,10 @@ function About() {
       ref={containerRef}
     >
       <div className="about" id="about">
-        <div className="picture" />
+        <div className="picture">
+          <img className="nuria" src={nuria} />
+          <img className="eris" src={eris} />
+        </div>
         <div className="about-text">
           <div className="section-title">
             <div className="line" />

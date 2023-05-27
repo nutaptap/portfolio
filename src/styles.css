@@ -28,7 +28,7 @@ html {
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
 }
@@ -61,7 +61,7 @@ h4 {
 
 h5 {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #80818d;
 }
 
@@ -461,7 +461,6 @@ nav button a:hover::before {
 }
 
 .project p {
-  font-size: 0.9rem;
   line-height: 1.7rem;
 }
 
@@ -563,23 +562,34 @@ nav button a:hover::before {
   margin-top: 0.1rem;
 }
 
-.about .picture {
-  background-image: url("./assets/cvpic.png");
+.picture {
+  position: relative;
+}
+
+.about .nuria,
+.about .eris {
   width: 400px;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+  transform: rotate(3deg);
+}
+
+.about .eris {
   opacity: 0;
-  transition: all 0.6s ease-in-out;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.about .picture::after {
-  background-image: url("./assets/pic-eris.png");
-  display: none;
+.picture:hover .nuria {
+  opacity: 0;
+  visibility: hidden;
 }
 
-.about .picture:hover {
-  background-image: url("./assets/pic-eris.png");
+.picture:hover .eris {
+  opacity: 1;
+  visibility: visible;
 }
 
 .about button {
