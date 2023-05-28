@@ -9,7 +9,7 @@ function Footer() {
         <a target="_blank" href="https://github.com/nutaptap">
           <img src={github}></img>
         </a>
-        <a target="_blank">
+        <a target="_blank" href="https://www.linkedin.com/in/nuriafg/">
           <img src={linkedin}></img>
         </a>
       </div>
