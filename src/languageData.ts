@@ -40,7 +40,7 @@ const languageData = {
                     link: "",
                     github: "https://github.com/nutaptap/portfolio"
                 },{
-                    title: 'Habit tracker',
+                    title: 'Habital',
                     text: "Currently, I'm working on a habit tracking application using React and Firebase as the backend. It allows users to create and complete daily habits and includes a control panel, progress charts, a streak counter, a best streak counter, and user authentication via Google or email/password.",
                     image: "./habital.png",
                     tags: ["Typescript", "React", "Firebase"],
@@ -103,7 +103,7 @@ const languageData = {
                 link: "",
                 github: "https://github.com/nutaptap/portfolio"
             },{
-                title: 'Habit tracker',
+                title: 'Habital',
                 text: "Actualmente estoy trabajando en una aplicación de seguimiento de hábitos usando React y Firebase como backend. Permite crear y completar hábitos diarios, cuenta con un panel de control, gráficos de progreso, un contador de rachas y de mejor racha y autenticación de usuario vía google o email / password.",
                 image: "./habital.png",
                 tags: ["Typescript", "React", "Firebase"],
@@ -167,7 +167,7 @@ const languageData = {
                 link: "",
                 github: "https://github.com/nutaptap/portfolio"
             },{
-                title: 'Habit tracker',
+                title: 'Habital',
                 text: "Actualment estic treballant en una aplicació de seguiment d'hàbits utilitzant React i Firebase com a backend. Permet crear i completar hàbits diaris, compta amb un tauler de control, gràfics de progrés, un comptador de ratxes i de millor ratxa, i autenticació d'usuari a través de Google o correu electrònic / contrasenya.",
                 image: "./habital.png",
                 tags: ["Typescript", "React", "Firebase"],
