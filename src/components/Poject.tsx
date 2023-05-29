@@ -1,6 +1,5 @@
 import { LanguageContext } from "../App";
 import { useContext, useEffect, useRef, useState } from "react";
-import languageData from "../languageData";
 import repo from "../assets/repo.svg";
 
 interface ProjectProps {
@@ -10,6 +9,7 @@ interface ProjectProps {
     image: string;
     tags: string[];
     link?: string;
+    github?: string;
   };
 }
 
@@ -58,7 +58,11 @@ function Project(props: ProjectProps) {
         <a target="_blank" href={props.project.link}>
           <img src={props.project.image} className="project-image" />
         </a>
-        <a target="_blank" className="project-links">
+        <a
+          target="_blank"
+          className="project-links"
+          href={props.project.github}
+        >
           <img src={repo}></img>
           GitHub
         </a>

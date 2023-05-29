@@ -25,7 +25,7 @@ const languageData = {
         about: {
             title: 'About',
             text1: "Hey there, I'm Nuria, a frontend developer who's all about building cool stuff.",
-            text2: "I've always had a knack for creating things, and that's what drew me to the exciting world of websites and applications.",
+            text2: "I've always had a knack for creating things, and that's what drew me to the world of websites and applications.",
             text3: "HTML, CSS, and JavaScript? They're my go-to tools. I love using frameworks like React, and I'm currently diving into Typescript to level up my skills.",
             text4: "My real passion lies in crafting apps that make people's lives better, adding those special touches that enhance the user experience ✨",
             text5: "I'm constantly on the lookout for new things to learn and ways to grow. When I'm not coding, you'll find me sketching illustrations or chilling with my cat, Eris."
@@ -37,25 +37,29 @@ const languageData = {
                     text: "I developed a portfolio using React and TypeScript to showcase my projects. I implemented the website and its routes in multiple languages and added scroll animations.",
                     image: "./portfolio.png",
                     tags: ["Typescript", "React"],
-                    link: ""
+                    link: "",
+                    github: "https://github.com/nutaptap/portfolio"
                 },{
                     title: 'Habit tracker',
                     text: "Currently, I'm working on a habit tracking application using React and Firebase as the backend. It allows users to create and complete daily habits and includes a control panel, progress charts, a streak counter, a best streak counter, and user authentication via Google or email/password.",
-                    image: "./cook-that.png",
+                    image: "./habital.png",
                     tags: ["Typescript", "React", "Firebase"],
-                    link: ""
+                    link: "https://github.com/nutaptap/habital",
+                    github: "https://github.com/nutaptap/habital"
                 },{
                     title: 'Pomoglobo',
                     text: "I created a productivity application with a task list, ambient sounds, and a complex timer that utilizes the Pomodoro technique. I used JavaScript and the Freesound API for the sounds and learned how to store and manage data using local storage.",
                     image: "./pomoglobo.png",
                     tags: ["Javascript", "Freesound API"],
-                    link: "https://nutaptap.github.io/pomoglobo/"
+                    link: "https://nutaptap.github.io/pomoglobo/",
+                    github: "https://github.com/nutaptap/pomoglobo"
                 },{
                     title: 'Cook that',
                     text: "I developed a web application that suggests delicious recipes based on the user's dietary preferences. I used JavaScript and the Spoonacular API to retrieve highly-rated and quick-to-make recipes, select one of them randomly, and render it.",
                     image: "./cook-that.png",
                     tags: ["Javascript", "Spoonacular API"],
-                    link: "https://nutaptap.github.io/cook-that/"
+                    link: "https://nutaptap.github.io/cook-that/",
+                    github: "https://github.com/nutaptap/cook-that"
                 }
             ]
     },
@@ -96,25 +100,29 @@ const languageData = {
                 text: "Desarrollé un portafolio utilizando React y TypeScript para mostrar mis proyectos. Implementé la web y sus rutas en múltiples idiomas y añadí animaciones al hacer scroll.",
                 image: "./portfolio.png",
                 tags: ["Typescript", "React"],
-                link: ""
+                link: "",
+                github: "https://github.com/nutaptap/portfolio"
             },{
                 title: 'Habit tracker',
                 text: "Actualmente estoy trabajando en una aplicación de seguimiento de hábitos usando React y Firebase como backend. Permite crear y completar hábitos diarios, cuenta con un panel de control, gráficos de progreso, un contador de rachas y de mejor racha y autenticación de usuario vía google o email / password.",
-                image: "./cook-that.png",
+                image: "./habital.png",
                 tags: ["Typescript", "React", "Firebase"],
-                link: ""
+                link: "https://github.com/nutaptap/habital",
+                github: "https://github.com/nutaptap/habital"
             },{
                 title: 'Pomoglobo',
                 text: "Creé una aplicación de productividad con lista de tareas, sonidos ambientales y un temporizador complejo que utiliza la técnica pomodoro. Utilicé JavaScript y la API de Freesound para los sonidos y aprendí a almacenar y gestionar datos usando el almacenamiento local.",
                 image: "./pomoglobo.png",
                 tags: ["Javascript", "Freesound API"],
-                link: "https://nutaptap.github.io/pomoglobo/"
+                link: "https://nutaptap.github.io/pomoglobo/",
+                github: "https://github.com/nutaptap/pomoglobo"
             },{
                 title: 'Cook that',
                 text: "Desarrollé una aplicación web que sugiere recetas deliciosas basadas en las preferencias dietéticas del usuario. Utilicé JavaScript y la API Spoonacular para obtener recetas bien valoradas y rápidas de realizar, seleccionar una de ellas de manera aleatoria y renderizarla.",
                 image: "./cook-that.png",
                 tags: ["Javascript", "Spoonacular API"],
-                link: "https://nutaptap.github.io/cook-that/"
+                link: "https://nutaptap.github.io/cook-that/",
+                github: "https://github.com/nutaptap/cook-that"
             }
         ]
         
@@ -156,25 +164,29 @@ const languageData = {
                 text: "Vaig desenvolupar un portafoli utilitzant React i TypeScript per mostrar els meus projectes. Vaig implementar la pàgina web i les seves rutes en diversos idiomes i vaig afegir animacions en fer scroll.",
                 image: "./portfolio.png",
                 tags: ["Typescript", "React"],
-                link: ""
+                link: "",
+                github: "https://github.com/nutaptap/portfolio"
             },{
                 title: 'Habit tracker',
                 text: "Actualment estic treballant en una aplicació de seguiment d'hàbits utilitzant React i Firebase com a backend. Permet crear i completar hàbits diaris, compta amb un tauler de control, gràfics de progrés, un comptador de ratxes i de millor ratxa, i autenticació d'usuari a través de Google o correu electrònic / contrasenya.",
-                image: "./cook-that.png",
+                image: "./habital.png",
                 tags: ["Typescript", "React", "Firebase"],
-                link: ""
+                link: "https://github.com/nutaptap/habital",
+                github: "https://github.com/nutaptap/habital"
             },{
                 title: 'Pomoglobo',
                 text: "He creat una aplicació de productivitat amb llista de tasques, sons ambientals i un temporitzador complex que utilitza la tècnica Pomodoro. He utilitzat JavaScript i l'API de Freesound per als sons, i he après a emmagatzemar i gestionar dades utilitzant l'emmagatzematge local.",
                 image: "./pomoglobo.png",
                 tags: ["Javascript", "Freesound API"],
-                link: "https://nutaptap.github.io/pomoglobo/"
+                link: "https://nutaptap.github.io/pomoglobo/",
+                github: "https://github.com/nutaptap/pomoglobo"
             },{
                 title: 'Cook that',
                 text: "He desenvolupat una aplicació web que suggereix receptes delicioses basades en les preferències dietètiques de l'usuari. He utilitzat JavaScript i l'API Spoonacular per obtenir receptes ben valorades i ràpides de realitzar, seleccionar-ne una de manera aleatòria i renderitzar-la.",
                 image: "./cook-that.png",
                 tags: ["Javascript", "Spoonacular API"],
-                link: "https://nutaptap.github.io/cook-that/"
+                link: "https://nutaptap.github.io/cook-that/",
+                github: "https://github.com/nutaptap/cook-that"
             }
         ]
         
