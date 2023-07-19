@@ -8,6 +8,7 @@ import css from "../assets/css-3.png";
 import reactIcon from "../assets/react.png";
 import git from "../assets/git.png";
 import firebase from "../assets/firebase.png";
+import jest from "../assets/jest.svg";
 
 function Skills() {
   const language = useContext(LanguageContext);
@@ -71,14 +72,17 @@ function Skills() {
             <img src={firebase} /> Firebase
           </li>
           <li>
-            {(language === "en" && languageData.en.skills.responsive) ||
-              (language === "es" && languageData.es.skills.responsive) ||
-              (language === "ca" && languageData.ca.skills.responsive)}
+            <img src={jest} /> Jest
           </li>
           <li>
             {(language === "en" && languageData.en.skills.accessibility) ||
               (language === "es" && languageData.es.skills.accessibility) ||
               (language === "ca" && languageData.ca.skills.accessibility)}
+          </li>
+          <li>
+            {(language === "en" && languageData.en.skills.responsive) ||
+              (language === "es" && languageData.es.skills.responsive) ||
+              (language === "ca" && languageData.ca.skills.responsive)}
           </li>
         </ul>
       </div>

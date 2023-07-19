@@ -431,6 +431,10 @@ nav button a:hover::before {
   animation: fade-in-right 0.8s 0.8s forwards;
 }
 
+.skills-container.visible li:nth-of-type(10) {
+  animation: fade-in-right 0.8s 0.9s forwards;
+}
+
 /*#endregion*/
 
 /*#region Work*/
