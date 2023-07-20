@@ -9,7 +9,7 @@ const languageData = {
     intro: {
       greeting: "Hi, my name is",
       subtitle:
-        "I'm a frontend developer that loves building beautiful and user-friendly websites and applications.",
+        "I'm a frontend developer that loves building visually appealing, accessible, and intuitive websites and applications.",
     },
     skills: {
       title: "Skills",
@@ -90,7 +90,7 @@ const languageData = {
     intro: {
       greeting: "Hola, soy",
       subtitle:
-        "Soy una desarrolladora frontend a la que le encanta construir sitios web y aplicaciones bonitas y con una excelente experiencia de usuario.",
+        "Soy una desarrolladora frontend a la que le encanta construir sitios web y aplicaciones visualmente atractivas, accesibles e intuitivas.",
     },
     skills: {
       title: "Habilidades",
@@ -171,7 +171,7 @@ const languageData = {
     intro: {
       greeting: "Hola, em dic",
       subtitle:
-        "Sóc una desenvolupadora frontend a qui li encanta construir llocs web i aplicacions boniques amb una excel·lent experiència d'usuari.",
+        "Sóc una desenvolupadora frontend a qui li encanta construir llocs web i aplicacions visualment atractives, accesibles i intuitives.",
     },
     skills: {
       title: "Habilitats",
